@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby Default Starter`
   },
   plugins: [
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-sass`,
     {
@@ -26,6 +27,12 @@ module.exports = {
       options: {
         plugins: []
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `taitounited`,
+      },
+    },
   ]
 };
